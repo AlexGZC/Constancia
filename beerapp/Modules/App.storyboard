@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZGe-bg-Of0">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Base Tab Bar Controller-->
+        <scene sceneID="3hA-Cc-Q00">
+            <objects>
+                <tabBarController storyboardIdentifier="BaseTabBarControllerID" id="EFo-xj-HxO" customClass="BaseTabBarController" customModule="beerapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MxI-sT-eAL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.78431372549019607" green="0.97254901960784312" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="defaultIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="mainTabBar" destination="MxI-sT-eAL" id="FH5-ap-Ea1"/>
+                        <segue destination="9dq-gn-b7b" kind="relationship" relationship="viewControllers" id="IFM-Eu-sm4"/>
+                        <segue destination="Htr-en-9a2" kind="relationship" relationship="viewControllers" id="xJX-xu-wYj"/>
+                        <segue destination="mlI-ef-Z6h" kind="relationship" relationship="viewControllers" id="C9L-zM-V3f"/>
+                        <segue destination="xh5-Mw-jjP" kind="relationship" relationship="viewControllers" id="ur2-Ku-gRU"/>
+                        <segue destination="NVq-qp-chf" kind="relationship" relationship="viewControllers" id="4aO-KA-R5G"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUM-op-nbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="-10"/>
+        </scene>
+        <!--FindPlacesViewControllerID-->
+        <scene sceneID="c4G-qq-x4O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FIndPlaces" referencedIdentifier="FindPlacesViewControllerID" id="mlI-ef-Z6h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Localización" image="icon-tabbar-places" id="0bx-Dk-ZZU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWf-ta-j0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-230"/>
+        </scene>
+        <!--CheckInID-->
+        <scene sceneID="gMO-eF-edF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CheckIn" referencedIdentifier="CheckInID" id="9dq-gn-b7b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Check In" id="wgs-E8-Mmv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONU-tM-X02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998" y="-165"/>
+        </scene>
+        <!--Shops-->
+        <scene sceneID="BK4-5p-o4D">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shops" id="Htr-en-9a2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Comercios" id="sgw-sI-1Hv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43i-Ak-rJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="-80"/>
+        </scene>
+        <!--Promotions-->
+        <scene sceneID="lt9-5V-P4T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Promotions" id="xh5-Mw-jjP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Promociones" id="Kyg-qf-Lb1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Or-rL-szT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="19"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="sR2-Wq-ASZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="NVq-qp-chf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mi Perfil" id="XoH-Ci-nCo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjI-hO-1Mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="145"/>
+        </scene>
+        <!--Tour Controller-->
+        <scene sceneID="fQB-VK-Hcl">
+            <objects>
+                <viewController storyboardIdentifier="TourControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZGe-bg-Of0" customClass="TourController" customModule="beerapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x8h-Pw-85e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3h-dK-h1O">
+                                <rect key="frame" x="0.0" y="288" width="320" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disfruta responsablemente. Industrias La constancia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvG-iM-1Ti">
+                                        <rect key="frame" x="8" y="158" width="304" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="z6d-U6-bJy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH3-9K-clU" customClass="RoundButton" customModule="beerapp" customModuleProvider="target">
+                                        <rect key="frame" x="53" y="33" width="214" height="39"/>
+                                        <color key="backgroundColor" red="0.35294117650000001" green="0.74901960779999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Comenzar Ahora">
+                                            <color key="titleColor" red="0.10980392160000001" green="0.1529411765" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="EFo-xj-HxO" kind="presentation" modalTransitionStyle="crossDissolve" id="ymg-6N-kL2"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon-places-ic_place" translatesAutoresizingMaskIntoConstraints="NO" id="60F-Le-9Hy">
+                                        <rect key="frame" x="136" y="95" width="49" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="60F-Le-9Hy" secondAttribute="height" multiplier="1:1" id="6q7-cQ-GK0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="60F-Le-9Hy" firstAttribute="height" secondItem="h3h-dK-h1O" secondAttribute="height" multiplier="25%" id="0Wr-kH-U5M"/>
+                                    <constraint firstItem="60F-Le-9Hy" firstAttribute="centerX" secondItem="h3h-dK-h1O" secondAttribute="centerX" id="1Ni-x6-L5b"/>
+                                    <constraint firstItem="FvG-iM-1Ti" firstAttribute="leading" secondItem="h3h-dK-h1O" secondAttribute="leadingMargin" id="2ym-51-gBR"/>
+                                    <constraint firstAttribute="bottom" secondItem="FvG-iM-1Ti" secondAttribute="bottom" constant="16" id="9bj-OW-l8c"/>
+                                    <constraint firstItem="KH3-9K-clU" firstAttribute="height" secondItem="h3h-dK-h1O" secondAttribute="height" multiplier="20%" id="Dxx-sg-399"/>
+                                    <constraint firstItem="FvG-iM-1Ti" firstAttribute="centerX" secondItem="60F-Le-9Hy" secondAttribute="centerX" id="F2B-Be-XcN"/>
+                                    <constraint firstItem="FvG-iM-1Ti" firstAttribute="top" secondItem="60F-Le-9Hy" secondAttribute="bottom" constant="15" id="LXf-xa-H2a"/>
+                                    <constraint firstItem="KH3-9K-clU" firstAttribute="top" secondItem="h3h-dK-h1O" secondAttribute="topMargin" constant="25" id="adc-Wp-MGP"/>
+                                    <constraint firstItem="KH3-9K-clU" firstAttribute="leading" secondItem="h3h-dK-h1O" secondAttribute="leadingMargin" constant="45" id="cqL-hk-ecn"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="KH3-9K-clU" secondAttribute="trailing" constant="45" id="vjU-Bq-Hsj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnD-So-qxR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Bares cerca de vos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9p-X7-J6a">
+                                        <rect key="frame" x="53" y="162" width="214.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Encontrá los bares que andabas buscando y diviertete en cualquier partesdel país" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkH-4x-NK4">
+                                        <rect key="frame" x="40" y="202" width="240" height="28"/>
+                                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-slider-bottles" translatesAutoresizingMaskIntoConstraints="NO" id="dk3-Ge-J2n">
+                                        <rect key="frame" x="112" y="51" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dk3-Ge-J2n" secondAttribute="height" multiplier="1:1" id="NIf-bu-NvC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="kWX-QC-wvr">
+                                        <rect key="frame" x="141" y="245" width="39" height="28"/>
+                                    </pageControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dk3-Ge-J2n" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SnD-So-qxR" secondAttribute="top" constant="50.5" id="0FZ-9P-6ba"/>
+                                    <constraint firstItem="dk3-Ge-J2n" firstAttribute="centerX" secondItem="SnD-So-qxR" secondAttribute="centerX" id="4dV-fG-asL"/>
+                                    <constraint firstItem="J9p-X7-J6a" firstAttribute="top" secondItem="dk3-Ge-J2n" secondAttribute="bottom" constant="15" id="A2Q-yA-Mfk"/>
+                                    <constraint firstItem="J9p-X7-J6a" firstAttribute="centerX" secondItem="SnD-So-qxR" secondAttribute="centerX" id="CIp-jF-URJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="kWX-QC-wvr" secondAttribute="bottom" constant="15" id="Hfp-4s-BYr"/>
+                                    <constraint firstItem="kWX-QC-wvr" firstAttribute="centerX" secondItem="SnD-So-qxR" secondAttribute="centerX" id="ZLL-SO-gNw"/>
+                                    <constraint firstItem="dkH-4x-NK4" firstAttribute="top" secondItem="J9p-X7-J6a" secondAttribute="bottom" constant="10" id="m1Y-uj-8Fr"/>
+                                    <constraint firstItem="kWX-QC-wvr" firstAttribute="top" secondItem="dkH-4x-NK4" secondAttribute="bottom" constant="15" id="vPS-wD-tnm"/>
+                                    <constraint firstItem="dk3-Ge-J2n" firstAttribute="width" secondItem="SnD-So-qxR" secondAttribute="width" multiplier="30%" id="vRX-lZ-vnq"/>
+                                    <constraint firstItem="dkH-4x-NK4" firstAttribute="leading" secondItem="SnD-So-qxR" secondAttribute="leading" constant="40" id="vvM-er-GbY"/>
+                                    <constraint firstAttribute="trailing" secondItem="dkH-4x-NK4" secondAttribute="trailing" constant="40" id="ytk-Dc-u1R"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pic-Lh-5X1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h3h-dK-h1O" firstAttribute="top" secondItem="SnD-So-qxR" secondAttribute="bottom" id="3vm-EH-VwD"/>
+                            <constraint firstItem="h3h-dK-h1O" firstAttribute="bottom" secondItem="Qe3-6t-g0W" secondAttribute="bottom" id="XUP-Mq-1CN"/>
+                            <constraint firstItem="SnD-So-qxR" firstAttribute="trailing" secondItem="Qe3-6t-g0W" secondAttribute="trailing" id="ddn-z5-tvJ"/>
+                            <constraint firstItem="pic-Lh-5X1" firstAttribute="height" secondItem="x8h-Pw-85e" secondAttribute="height" multiplier="60%" id="eTt-3b-qOy"/>
+                            <constraint firstItem="h3h-dK-h1O" firstAttribute="trailing" secondItem="Qe3-6t-g0W" secondAttribute="trailing" id="gC5-h5-ltO"/>
+                            <constraint firstItem="pic-Lh-5X1" firstAttribute="top" secondItem="x8h-Pw-85e" secondAttribute="top" id="gg9-eN-hPX"/>
+                            <constraint firstItem="SnD-So-qxR" firstAttribute="leading" secondItem="Qe3-6t-g0W" secondAttribute="leading" id="iOn-C1-J4o"/>
+                            <constraint firstItem="pic-Lh-5X1" firstAttribute="leading" secondItem="Qe3-6t-g0W" secondAttribute="leading" id="jp2-hc-Bjf"/>
+                            <constraint firstItem="SnD-So-qxR" firstAttribute="top" secondItem="x8h-Pw-85e" secondAttribute="top" id="kNW-xT-wjz"/>
+                            <constraint firstItem="h3h-dK-h1O" firstAttribute="top" secondItem="pic-Lh-5X1" secondAttribute="bottom" id="o3W-0a-jS1"/>
+                            <constraint firstItem="h3h-dK-h1O" firstAttribute="leading" secondItem="Qe3-6t-g0W" secondAttribute="leading" id="v0t-It-KBy"/>
+                            <constraint firstItem="pic-Lh-5X1" firstAttribute="trailing" secondItem="Qe3-6t-g0W" secondAttribute="trailing" id="wEv-gW-WXc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qe3-6t-g0W"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="kWX-QC-wvr" id="Fhx-YE-uc8"/>
+                        <outlet property="scrollView" destination="pic-Lh-5X1" id="1Kb-BD-YHI"/>
+                        <outlet property="sliderLabel1" destination="J9p-X7-J6a" id="kdI-Zf-yjP"/>
+                        <outlet property="sliderLabel2" destination="dkH-4x-NK4" id="4sQ-ib-9SM"/>
+                        <outlet property="sliderimageView" destination="dk3-Ge-J2n" id="0dv-wb-ONI"/>
+                        <outlet property="startButton" destination="KH3-9K-clU" id="WTD-uv-x7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZs-zb-tv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710.625" y="-10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-places-ic_place" width="72" height="72"/>
+        <image name="icon-slider-bottles" width="204" height="152"/>
+        <image name="icon-tabbar-places" width="21" height="28"/>
+    </resources>
+</document>

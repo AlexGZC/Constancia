@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lottie Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" customClass="LottieController" customModule="beerapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hac-pi-AMd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.027450980392156862" green="0.29411764705882354" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-slider-bottles" translatesAutoresizingMaskIntoConstraints="NO" id="3Gr-Vy-Dmy">
+                                <rect key="frame" x="150" y="296" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-slider-bottles" translatesAutoresizingMaskIntoConstraints="NO" id="e85-hw-Kx0">
+                                <rect key="frame" x="158" y="579" width="57" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="XEq-Xs-5b3"/>
+                                    <constraint firstAttribute="height" constant="39" id="ad1-vH-ydO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disfruta responsablemente. Industrias La constancia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAV-NU-myD">
+                                <rect key="frame" x="43" y="626" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="huX-aa-nFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hac-pi-AMd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="33L-1e-9Ej"/>
+                            <constraint firstItem="hac-pi-AMd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="96J-OZ-udN"/>
+                            <constraint firstItem="3Gr-Vy-Dmy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Bdr-5f-KOs"/>
+                            <constraint firstItem="JAV-NU-myD" firstAttribute="top" secondItem="e85-hw-Kx0" secondAttribute="bottom" constant="8" symbolic="YES" id="ELH-s2-GJf"/>
+                            <constraint firstItem="3Gr-Vy-Dmy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Nse-w0-zhO"/>
+                            <constraint firstItem="JAV-NU-myD" firstAttribute="centerX" secondItem="3Gr-Vy-Dmy" secondAttribute="centerX" id="PF1-70-oAg"/>
+                            <constraint firstItem="hac-pi-AMd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q9O-Co-Plq"/>
+                            <constraint firstItem="e85-hw-Kx0" firstAttribute="centerX" secondItem="JAV-NU-myD" secondAttribute="centerX" id="SoA-gV-4gS"/>
+                            <constraint firstItem="JAV-NU-myD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="d4x-Bx-Hwb"/>
+                            <constraint firstItem="3Gr-Vy-Dmy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="276" id="i3e-ka-mqu"/>
+                            <constraint firstItem="hac-pi-AMd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lr2-E1-CV1"/>
+                            <constraint firstAttribute="bottom" secondItem="JAV-NU-myD" secondAttribute="bottom" constant="20" symbolic="YES" id="xVF-er-RDT"/>
+                            <constraint firstItem="3Gr-Vy-Dmy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="z9y-uI-soc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="379.16041979010498"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-slider-bottles" width="204" height="152"/>
+    </resources>
+</document>
